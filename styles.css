@@ -1,0 +1,484 @@
+
+html{
+    scroll-behavior: smooth;
+    font-size:18px;
+}
+
+body
+{
+    min-width: 350px;
+    background-color: black;
+    color:white;
+    font-family: Outfit;
+    padding-bottom:15vh;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+.main-div
+{
+    display:flex;
+    flex-direction: column;
+    gap:8vh;
+    
+}
+.social-media-link:hover
+{
+    cursor: pointer;
+}
+.page-one
+{
+    padding-top:15px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.page-one-contents
+{
+    display:flex;
+    flex-direction:column;
+    gap: 3vh;
+ 
+}
+
+#getsocial
+{
+    font-size: 1.5rem;
+}
+.page-one-contents .logo
+{
+    display:flex;
+    flex-direction:row;
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+
+}
+#motto
+{
+    font-size: 2rem;
+}
+.page-one-contents #head
+{
+    font-size: 7rem;
+    line-height: 85%;
+    font-weight:400;
+    letter-spacing:-0.3rem;
+}
+#contact-us-button
+{
+    width:40%;
+    height:4rem;
+    border:solid 6px black;
+    background-color: #14fe64;
+    color:black;
+    font-size:1.3rem;
+    font-weight:800;
+    border-radius:40px;
+    min-width:180px;
+}
+#contact-us-button:hover
+{
+    border-color: #14fe64;
+    background-color: black;
+    color:#14fe64;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-one-contents .logo img
+{
+    height:3rem;
+}
+.page-one-content-socials
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    
+}
+.page-one-content-socials img 
+{
+    width: 7%;
+}
+
+.page-one-content-socials #simple-line
+{
+    width:10%;
+    margin-left: 3%;
+    height:1px;
+    background-color: white;
+}
+.page-one-image
+{
+    text-align: center;
+}
+#person1
+{
+   width:80vw;
+}
+hr
+{
+    width:20%;
+}
+#contact-us-bottom
+{
+    display:none;
+}
+
+
+
+.dots
+{
+    width:30px;
+    height:35px;
+    background-color:#14fe64;
+    border-radius: 5px;
+    transform: skewX(-30deg);
+    background: linear-gradient(30deg,#14fe64,rgb(229, 252, 29));
+
+}
+.topic-heads
+{
+    color:#14fe64;
+    font-size: 3.5rem;
+}
+.parent-dot
+{
+    display:flex;
+    flex-direction:row;
+    gap: 5%;
+    max-width: 200px;
+    margin-top: 4%;
+}
+
+
+.page-two
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: left;
+}
+
+.page-two-left p
+{
+    font-size: 2.5rem;
+}
+#person2
+{
+    width:40vw;
+}
+
+
+
+.page-three
+{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: left;
+}
+.page-three-right p
+{
+
+    font-size: 2.5rem;
+}
+#person3
+{
+    width: 40vw;
+}
+
+
+
+.page-four
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.page-four p
+{
+    font-size: 2.5rem;
+}
+#freeee
+{
+    font-size: 4rem;
+    color:#14fe64;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+.page-five
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:10vw;
+    justify-content: space-evenly;
+}
+.page-five-left
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.page-five-right
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.cofounder
+{
+    margin-right: 50%;
+    margin-top:-50%;
+    width:15vw;
+    border-radius:50%;
+}
+.speechquote
+{
+    width:30vw;
+}
+
+
+
+.page-six
+{
+    margin-top:10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.page-six span
+{
+    font-size: 7rem;
+    line-height: 80%;
+    font-weight: 800;
+}
+
+
+
+@media screen and (max-width:550px) 
+{
+    
+    body
+    {
+        padding-left:1vw ;
+        padding-right:1vw ;
+        padding-top:7vh;
+    }
+    html
+    {
+        font-size:8.5px;
+    }
+    .page-one-content-socials
+    {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+
+.logo
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    padding:10px;
+    top: 0vh;
+}
+.page-one-content-socials img 
+{
+    width: 10%;
+}
+
+.main-div
+{
+    gap:8vh;
+}
+.dots
+{
+    aspect-ratio: 0.85;
+    margin-right: -10%;
+    transform: scale(0.5) skewX(-30deg);
+}
+.page-one
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.page-one-contents
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page-two
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.page-two-left span{
+    text-align: start;
+}
+.page-two-left p{
+    text-align: center;
+}
+.page-three
+{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content: center;
+}
+.page-three-right p
+{
+    text-align: center;
+}
+.page-five
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10vh;
+}
+.cofounder
+{
+    width:30vw;
+}
+.speechquote
+{
+    width:70vw;
+}
+.page-six
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    gap: 1vh;
+}
+
+.ending
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+#person1
+{
+    margin-bottom:-20%;
+}
+#person3
+{
+    width: 70vw;
+}
+#person2
+{
+    width: 70vw;
+}
+}
+
+
+@media screen and (min-width:930px) and (max-width:1307px)
+{
+    html
+    {
+        font-size: 15px;
+    }
+.page-one
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#person1
+{
+    width:50vw;
+}
+
+}
+
+@media screen and (min-width:550px) and (max-width:930px)
+{
+    html
+    {
+        font-size: 15px;
+    }
+.page-one
+{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+}
+#person1
+{
+
+    width:50vw;
+}
+.page-two
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.page-three
+{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content: left;
+}
+#person3
+{
+    width: 70vw;
+}
+#person2
+{
+    width: 70vw;
+}
+
+}
+
+.reveal:hover
+{
+    animation-name: popping;
+}
+.active
+{
+    animation-name:popping;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-iteration-count:1;
+}
+@keyframes popping
+{
+    0%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
