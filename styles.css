@@ -9,7 +9,7 @@ body
     min-width: 350px;
     background-color: black;
     color:white;
-    font-family: Outfit;
+    font-family: 'Outfit', sans-serif;
     padding-bottom:15vh;
     padding-left:10vw;
     padding-right:10vw;
