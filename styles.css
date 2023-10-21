@@ -230,6 +230,12 @@ hr
     flex-direction:column;
     align-items: center;
 }
+.page-five-right-two
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
 .cofounder
 {
     margin-right: 50%;
@@ -239,7 +245,7 @@ hr
 }
 .speechquote
 {
-    width:30vw;
+    width:20vw;
 }
 
 
@@ -281,6 +287,14 @@ hr
         justify-content: center;
     } 
 
+#motto
+{
+    font-size:2.8rem ;
+}
+#contact-us-button
+{
+    height:50px;
+}
 .logo
 {
     display:flex;
