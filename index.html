@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valstr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="mintbul.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    
+    
+</head>
+<body>
+<div class="main-div">
+   <div class="page-one">
+    <div class="page-one-contents">
+       <div class="logo">
+        <img src="mintbul.png" />
+        <img src="valstr.svg"/>
+       </div> 
+        <span id="head">Launching<br>Soon</span>
+        <span id="motto">We are building a unisex street <br>fashion
+            brand for India</span>
+        
+        <a href="mailto:shopvalstr@outlook.com"><button id="contact-us-button">CONTACT US</button></a>
+        <div class="page-one-content-socials">
+            <span id="getsocial">GET SOCIAL</span>
+            <div id="simple-line"></div>
+            <img src="linkedin.svg" class="social-media-link" onclick="toLinkedin()"/>
+            <img src="thread.svg" class="social-media-link" onclick="toThreads()"/> 
+            <img src="insta.svg" class="social-media-link" onclick="toInsta()"/> 
+        </div>
+    </div>
+    <img src="person1.png" id="person1" />
+   </div>
+   <div class="page-two">
+    <div class="page-two-left">
+        <span class="topic-heads">WHO WE ARE?</span>
+        <div class="parent-dot"><div class="dots"></div><div class="dots"></div><div class="dots"></div>
+        </div>
+        <p>We are a clothing brand,headed by two tech
+        savvy Individuals and a fashion enthusiast dedicated to delivering breathtaking designs crafted with the highest quality materials, all at affordable prices.</p>
+    </div>
+    <img src="person2.png" id="person2" class="reveal"/>
+   </div>
+   <div class="page-three">
+    <img src="person3.png"  id="person3" class="reveal"/>
+    <div class="page-three-right">
+        <span class="topic-heads">WHAT SETS US APART?</span>
+        <div class="parent-dot"><div class="dots"></div><div class="dots"></div><div class="dots"></div>
+        </div>
+        <p>We are on a mission to revolutionize the way you shop
+        online.Along with a stunning traditional e-commerce website,we are building a new way of online shopping that might
+        be the first of its kind in India.</p>
+    </div>
+   </div>
+   <div class="page-four">
+    <center><span id="freeee">FREEEE !!!</span></center>
+    <p>You heard it right ! As an early supporter of our brand, we truly value you and your support. Therefore, we've decided to offer you exclusive deals and for selected individuals free products on our launch day.Winners will be selected from our Instagram followers. So, please stay connected with us.</p>
+   </div>
+   <div class="page-five">
+    <div class="page-five-left">
+        <img src="speech-quote-uvaiz-cropped.svg" width="50%" class="speechquote"/>
+        <img src="uvaiz.png" width="10%" class="cofounder reveal"/>
+    </div>
+    <div class="page-five-right">
+        <img src="speech-quote-rameez-cropped.svg" width="50%" class="speechquote"/>
+        <img src="rameez.png" width="10%" class="cofounder reveal"/>
+    </div>
+    <div class="page-five-right-two">
+        <img src="speech-quote-pranav-cropped.svg" width="50%" class="speechquote"/>
+        <img src="pranav1.jpg" width="50%" class="cofounder reveal"/>
+
+    </div>
+   </div>
+   <div class="page-six">
+    <img src="mintbul.png" width="15%"/>
+    <span>Stay <br>tuned !</span>
+    <div class="ending">
+        <h3>FOLLOW US ON</h3><img src="insta.svg"  width="5%" class="social-media-link" onclick="toInsta()"/>
+    </div>
+   </div>
+</div>
+
+<script>
+    window.addEventListener("scroll",reveal)
+    function reveal()
+    {
+        var reveals = document.querySelectorAll('.reveal')
+        for(var i=0;i<reveals.length;i++)
+        {
+            var wh = window.innerHeight
+            var revealtop = reveals[i].getBoundingClientRect().top
+            //getBoundingClientRect().top gives us the distance of the element from the top of the viewport
+            if(revealtop < 500)
+            {
+                reveals[i].classList.add('active')
+            }else{
+                reveals[i].classList.remove('active')
+            }
+        }
+
+    }
+
+    function toInsta()
+    {
+        window.open("https://instagram.com/thevalstr?igshid=MzRlODBiNWFlZA==","_blank")
+    }
+    function toLinkedin()
+    {
+        window.open("https://www.linkedin.com/company/valstr/","_blank")
+    }
+    function toThreads()
+    {
+        window.open("https://www.threads.net/@thevalstr","_blank")
+    }
+</script>
+</body>
+</html>
